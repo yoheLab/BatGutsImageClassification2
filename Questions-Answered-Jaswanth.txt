@@ -1,0 +1,64 @@
+Questions for Jaswanth
+
+Do you run the program within VS-Code?
+
+I have used Pycharm , to run the service
+
+
+How exactly do you run the program?
+
+Install the packages from requirements.txt file
+
+Why are requirements for some packages specified as a specific version, but others are >=
+
+I have used some packages latest version , we use >= or == , it won't be an issue to install them 
+
+What are feedback images?
+
+Feedback images are , feedback given by users in the UI , whenever predictions goes wrong user can upload the image with their right classification , we store them in backend
+
+
+Why did you choose the IVP model ?
+
+I have used Siamese network and UMAP to classify the images , Still more data is needed to train the model. 
+You can choose a different kind of models to classify them . As we got new multimodels developed by google and Open ai , you can try them to classify the images
+
+What other models have you considered ?
+
+I have tried VGG16 neural network , siamese , UMAP , and other neural network layers 
+
+
+What is the next enhancement that you were planing to make to the program ?
+
+More data is needed to Train the model 
+As we got more number of Multimodels , these images need to be trained on them for better accuracy 
+
+
+What is the most significant improvement that can be made to the program ?
+
+As the images are in Tif format , Images need to be Resized and convert them to PNG of Jpg format properly to reduce data loss
+We can use Googles Multimodels for it ( Please do some research on it )
+
+Why did you choose the run the application on AWS rather than the Mac server?
+
+I have used my own AWS account to run the program , But please deploy the application in AWS , so that we can expose REST API'S so that others can use the L=alication
+
+What resources does your program use on the AWS server ?
+
+No other resources , but you should integrate S3 bucket storage to store the images uploaded by the users in future
+
+What are the login credentials of the AWS?
+
+I don't have them
+
+What is the host OS of the servers in the AWS ?
+
+ --
+
+Where are the Mongo database files stored?
+
+Mongo is not a good idea to store the images , please use AWS S3 bucket 
+
+What is the schema of the Mongo database ?
+
+Not implemented
